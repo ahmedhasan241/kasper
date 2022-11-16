@@ -113,22 +113,22 @@ header .container::after {
 }
 header .logo img {
   height: 40px;
-  animation: moveInImage .5s ease-out .75s;
+  animation: moveInImage 0.5s ease-out 0.75s;
   animation-fill-mode: backwards;
 }
-header .logo img:hover{
+header .logo img:hover {
   transform: translateY(2px);
 }
 
 @keyframes moveInImage {
   0% {
-      opacity: 0;
-      transform: translateY(3rem);
+    opacity: 0;
+    transform: translateY(3rem);
   }
 
   100% {
-      opacity: 1;
-      transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 header nav {
@@ -179,7 +179,7 @@ header nav ul li a {
 header nav ul li a.active,
 header nav ul li a:hover {
   color: var(--main-color);
-  border-bottom: 1px solid var(--main-color); 
+  border-bottom: 1px solid var(--main-color);
 }
 header nav .form {
   width: 40px;
@@ -201,7 +201,7 @@ header nav .form i {
 .landing {
   min-height: 100vh;
   background-color: #1f2021;
-  background-image:url("../images/landing.jpg");
+  background-image: url("../images/landing.jpg");
   background-size: cover;
   position: relative;
 }
@@ -456,6 +456,7 @@ header nav .form i {
   margin: 30px auto;
   text-decoration: none;
   text-transform: uppercase;
+  border-radius: 20px;
 }
 /* End Portfolio */
 /* Start Video */
@@ -498,6 +499,12 @@ header nav .form i {
   padding: 10px 20px;
   border: none;
   text-transform: uppercase;
+  border-radius: 20px;
+}
+.video .text button:hover {
+  background-color: white;
+  color: black;
+  font-weight: bold;
 }
 /* End Video */
 /* Start About */
@@ -788,6 +795,11 @@ header nav .form i {
   border: 1px solid var(--main-color);
   width: fit-content;
   margin: 30px auto;
+  border-radius: 20px;
+}
+.pricing .plans .plan .foot a:hover {
+  background-color: var(--main-color);
+  color: white;
 }
 .pricing .contact-text {
   text-align: center;
@@ -802,6 +814,7 @@ header nav .form i {
   color: white;
   padding: 15px 30px;
   text-decoration: none;
+  border-radius: 20px;
 }
 /* End Pricing */
 /* Start Subscribe */
